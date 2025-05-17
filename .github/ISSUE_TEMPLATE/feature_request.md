@@ -1,7 +1,7 @@
 ---
 name: Feature request
 about: 새로운 기능을 추가할 때 사용할 이슈 템플릿입니다.
-title: "[FEAT]"
+title: 'feat: '
 labels: ''
 assignees: ''
 

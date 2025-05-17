@@ -1,7 +1,7 @@
 ---
 name: Bug report
 about: 버그를 수정할 때 사용할 이슈 템플릿입니다.
-title: "[FIX] "
+title: 'fix: '
 labels: ''
 assignees: ''
 
