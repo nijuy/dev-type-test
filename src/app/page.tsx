@@ -1,22 +1,21 @@
 import Link from 'next/link';
+import { Metadata } from 'next';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: '홈',
 };
 
 export default function HomePage() {
   return (
-    <div className="w-screen h-screen flex items-center justify-center bg-gray-100">
+    <div className="flex h-screen w-screen items-center justify-center bg-gray-100">
       <Link href="/result">
-        <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition">
+        <button className="rounded-lg bg-blue-600 px-6 py-3 text-white transition hover:bg-blue-500">
           결과 페이지로 이동
         </button>
       </Link>
     </div>
   );
 }
-
-
 
 // import Image from 'next/image';
 
