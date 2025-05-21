@@ -1,4 +1,4 @@
-export default function SurveyPage() {
+export default function QuestionPage() {
   return (
     <div className="container flex h-dvh flex-col items-center justify-between md:justify-start">
       <main className="w-full md:mb-[5.375rem]">
