@@ -1,8 +1,12 @@
 'use client';
-
+import { Metadata } from 'next';
 import { useRouter } from 'next/navigation';
 
-export default function StartPage() {
+export const metadata: Metadata = {
+  title: '홈',
+};
+
+export default function HomePage() {
   const router = useRouter();
 
   const handleStart = () => {
