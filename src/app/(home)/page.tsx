@@ -9,7 +9,7 @@ export default function StartPage() {
     const input = document.getElementById('nickname-input') as HTMLInputElement;
     const nickname = input?.value.trim();
 
-    if (!nickname.trim()) {
+    if (!nickname) {
       alert('닉네임을 입력해 주세요.');
       return;
     }
@@ -21,7 +21,7 @@ export default function StartPage() {
   return (
     <div className="container flex h-dvh flex-col items-center">
       <main className="flex h-[calc(100%-11rem)] w-full max-w-md flex-col justify-between space-y-10 py-6 text-center">
-        <div className="mt-10 text-3xl leading-[4rem] font-bold">
+        <div className="mt-10 text-3xl leading-16 font-bold">
           <p>
             <span className="text-primary">개발자 </span>
             유형테스트
