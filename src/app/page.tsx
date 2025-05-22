@@ -9,7 +9,7 @@ export default function HomePage() {
     const input = document.getElementById('nickname-input') as HTMLInputElement;
     const nickname = input?.value.trim();
 
-    if (!nickname.trim()) {
+    if (!nickname) {
       alert('닉네임을 입력해 주세요.');
       return;
     }
