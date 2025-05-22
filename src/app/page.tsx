@@ -1,10 +1,6 @@
 'use client';
-import { Metadata } from 'next';
-import { useRouter } from 'next/navigation';
 
-export const metadata: Metadata = {
-  title: '홈',
-};
+import { useRouter } from 'next/navigation';
 
 export default function HomePage() {
   const router = useRouter();
@@ -24,7 +20,7 @@ export default function HomePage() {
 
   return (
     <div className="container flex h-dvh flex-col items-center">
-      <main className="flex h-[calc(100%-11rem)] w-full max-w-md flex-col justify-between space-y-10 py-6 text-center">
+      <main className="text-foreground flex h-[calc(100%-11rem)] w-full max-w-md flex-col justify-between space-y-10 py-6 text-center">
         <div className="mt-10 text-3xl leading-[4rem] font-bold">
           <p>
             <span className="text-primary">개발자 </span>
