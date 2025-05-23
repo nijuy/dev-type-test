@@ -5,34 +5,34 @@ export default function RadioGroup({ active, onChange }: {
 
   return (
     <div>
-      {[1, 2, 3, 4, 5].map((num) => (
+      {textLabel.map((label, index) => (
         <label
-          key={num}
-          htmlFor={`option-${num}`}
+          key={index}
+          htmlFor={`option-${index+1}`}
           className={`
             w-full block mb-2.5 cursor-pointer
           `}
         >
           <input
             type="radio"
-            id={`option-${num}`}
+            id={`option-${index+1}`}
             name="option"
-            value={num}
-            checked={active === num}
-            onChange={() => onChange(num)}
+            value={index+1}
+            checked={active === index+1}
+            onChange={() => onChange(index+1)}
             className="w-full peer hidden"
           />
           <div
             className={`
               w-full h-[3.13rem] flex items-center px-5 rounded-xl font-bold text-sm md:text-lg md:h-[3.75rem] md:px-7
               transition-colors truncate
-              ${active === num
+              ${active === index+1
                 ? 'bg-[#14B8A6] text-white'
                 : 'bg-[#F3F3F7] text-black'
               }
             `}
           >
-            {num}. {textLabel[num - 1]}
+            {index+1}. {label}
           </div>
         </label>
       ))}
