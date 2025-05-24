@@ -1,5 +1,9 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import DetailInfo from './components/DetailInfo';
 import Btn from './components/Btn';
+import { log } from 'console';
 
 export default function ResultPage() {
   // ✅ 유저 데이터 타입 정의
@@ -15,10 +19,22 @@ export default function ResultPage() {
   }
 
   // ✅ 유저 데이터
-  const userData: UserDataType = {
-    name: '하영',
+  const [userData, setUserData] = useState<UserDataType>({
+    name: '',
     typeResult: '야생형',
-  };
+  });
+
+  useEffect(() => {
+    const userName = localStorage.getItem('nickname');
+
+    if (userName) {
+      setUserData({
+        name: userName,
+        typeResult: '야생형', // ** 수정 중인 부분입니다 **
+      });
+    }
+  }, []);
+
   // ✅ 결과 데이터
   const resultData: Record<string, ResultDataType> = {
     야생형: {
