@@ -31,7 +31,7 @@ export default function RadioGroup({
             className="peer hidden w-full"
           />
           <div
-            className={`flex h-[3.13rem] w-full items-center truncate rounded-xl bg-[#F3F3F7] px-5 text-sm font-bold text-black transition-colors peer-checked:bg-[#14B8A6] peer-checked:text-white md:h-[3.75rem] md:px-7 md:text-lg`}
+            className={`peer-checked:bg-primary bg-foreground flex h-[3.13rem] w-full items-center truncate rounded-xl px-5 text-sm font-bold text-black transition-colors peer-checked:text-white md:h-[3.75rem] md:px-7 md:text-lg`}
           >
             {index + 1}. {label}
           </div>
