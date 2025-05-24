@@ -18,12 +18,12 @@ export default function RadioGroup({
       {textLabel.map((label, index) => (
         <label
           key={index}
-          htmlFor={`option-${index + 1}`}
+          htmlFor={`option-${index}`}
           className={'mb-2.5 block w-full cursor-pointer'}
         >
           <input
             type="radio"
-            id={`option-${index + 1}`}
+            id={`option-${index}`}
             name="option"
             value={index + 1}
             checked={active === index + 1}
