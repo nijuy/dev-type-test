@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+   <img src="url" />
+   <h1 style="border-bottom:none;">나는 어떤 개발자일까?</h1>
+   <p>지금 바로 테스트를 통해 당신의 유형을 확인해보세요 🔍</p>
+</div>
 
-## Getting Started
+## 🎯 서비스 소개
 
-First, run the development server:
+[나는 어떤 개발자일까?](https://dev-type-test.vercel.app/)는 개발자의 성향과 특성을 분석하여 유형을 분류해주는 테스트입니다.<br/>
+간단한 문답을 통해 나의 개발자 유형과 추천 학습법을 확인할 수 있습니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 💻 개발자
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> 본 서비스는 [2025 오픈소스 컨트리뷰션 아카데미](https://www.contribution.ac/) 체험형 활동의 일환으로,
+> <Git 활용 및 Next.js 뽀개기> 프로젝트의 멘티가 모여 개발하였습니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+|              [김하영<br/>(@hy-glory)](https://github.com/hy-glory)              |                [변채원<br/>(@bye-on)](https://github.com/bye-on)                |                [이유진<br/>(@nijuy)](https://github.com/nijuy)                 |           [이정명<br/>(@usedupnote)](https://github.com/usedupnote)            |             [황남준<br/>(@namjun12)](https://github.com/namjun12)              |
+| :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :----------------------------------------------------------------------------: | :----------------------------------------------------------------------------: | :----------------------------------------------------------------------------: |
+| <img src="https://avatars.githubusercontent.com/u/197868891?v=4" width="120" /> | <img src="https://avatars.githubusercontent.com/u/123866834?v=4" width="120" /> | <img src="https://avatars.githubusercontent.com/u/87255462?v=4" width="120" /> | <img src="https://avatars.githubusercontent.com/u/59154924?v=4" width="120" /> | <img src="https://avatars.githubusercontent.com/u/87626510?v=4" width="120" /> |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ 기능 소개
 
-## Learn More
+### 시작 화면
 
-To learn more about Next.js, take a look at the following resources:
+닉네임 입력 후 테스트를 시작할 수 있습니다.<br/>
+닉네임을 입력하지 않으면 자동으로 랜덤 닉네임이 생성되어 사용됩니다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+(이미지)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 설문 화면
 
-## Deploy on Vercel
+테스트는 총 NN개의 질문으로 구성되어 있으며, 문항에 응답하면 자동으로 다음 문항으로 이동합니다.<br/>
+하단의 막대 그래프와 텍스트를 통해 현재 진행 상황을 확인할 수 있습니다.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+왼쪽 화살표를 눌러 이전 문항으로 돌아가 응답을 수정할 수 있습니다.<br/>
+이 경우, 자동 이동은 되지 않으며 오른쪽 화살표를 눌러 현재까지 답변한 마지막 문항으로 이동할 수 있습니다.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+(이미지)
+
+### 결과 화면
+
+참여자의 메인 유형과 각 유형별 비율을 보여주는 페이지입니다.<br/>
+메인 유형에 대한 간단한 설명과 추천 학습법도 함께 제공됩니다.
+
+아래 기능을 통해 테스트 링크를 공유하거나 저장할 수 있습니다:
+
+- `다시하기`: 테스트를 처음부터 다시 진행합니다.
+
+- `링크 복사`: 서비스의 URL을 복사합니다.
+
+- `이미지 저장`: 결과 화면을 이미지로 저장합니다.
+
+(이미지)
