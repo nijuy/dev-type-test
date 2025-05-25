@@ -48,7 +48,7 @@ export default function ProgressBar({
       </div>
       <div className="bg-foreground h-4 w-full rounded-full">
         <div
-          className={`bg-primary h-full rounded-full transition-all duration-300`}
+          className="bg-primary h-full max-w-full rounded-full transition-all duration-300"
           style={{
             width: `${((currentIndex + 1) / QUESTIONS.length) * 100}%`,
           }}
