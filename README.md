@@ -1,6 +1,6 @@
 <div align="center">
    <img src="url" />
-   <h1 style="border-bottom:none;">나는 어떤 개발자일까?</h1>
+   <h1>나는 어떤 개발자일까?</h1>
    <p>지금 바로 테스트를 통해 당신의 유형을 확인해보세요 🔍</p>
 </div>
 
@@ -11,7 +11,7 @@
 
 ## 💻 개발자
 
-> 본 서비스는 [2025 오픈소스 컨트리뷰션 아카데미](https://www.contribution.ac/) 체험형 활동의 일환으로,
+> 본 서비스는 [2025 오픈소스 컨트리뷰션 아카데미](https://www.contribution.ac/) 체험형 활동의 일환으로,<br/>
 > <Git 활용 및 Next.js 뽀개기> 프로젝트의 멘티가 모여 개발하였습니다.
 
 |              [김하영<br/>(@hy-glory)](https://github.com/hy-glory)              |                [변채원<br/>(@bye-on)](https://github.com/bye-on)                |                [이유진<br/>(@nijuy)](https://github.com/nijuy)                 |           [이정명<br/>(@usedupnote)](https://github.com/usedupnote)            |             [황남준<br/>(@namjun12)](https://github.com/namjun12)              |
