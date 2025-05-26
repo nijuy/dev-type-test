@@ -44,7 +44,7 @@ export default function Chart() {
         font: () => {
           const width = window.innerWidth;
           return {
-            size: width < 640 ? 10 : 16,
+            size: width < 640 ? 12 : 16,
             weight: 'bold' as const,
           };
         },
