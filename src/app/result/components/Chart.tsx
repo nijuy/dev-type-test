@@ -1,9 +1,11 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Chart as ChartJS, ArcElement } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
+import { Context } from 'chartjs-plugin-datalabels';
+import { getResultData, convertToPercentage } from '../utils/resultData';
 
 ChartJS.register(ArcElement);
 ChartJS.register(ChartDataLabels);
@@ -22,11 +24,6 @@ export default function Chart() {
     localStorage.setItem('typeResult', JSON.stringify(testResult));
   }, []);
 
-  // ✅ JSON 데이터 타입 정의
-  interface ResultDataType {
-    [key: string]: number;
-  }
-
   // ✅ 차트 데이터 타입 정의
   interface ChartDataType {
     labels: string[];
@@ -38,32 +35,6 @@ export default function Chart() {
       borderWidth: number;
     }[];
   }
-
-  // ✅ 차트 데이터 정렬
-  const getResultData = (): ResultDataType => {
-    const testResultData = localStorage.getItem('typeResult');
-    if (testResultData) {
-      const data = JSON.parse(testResultData) as ResultDataType;
-
-      const sortedEntries = Object.entries(data).sort(([, a], [, b]) => b - a);
-      const sortedData = Object.fromEntries(sortedEntries);
-
-      return sortedData;
-    }
-    throw new Error('No result data found in localStorage');
-  };
-
-  // ✅ 차트 데이터 가공 (to Percentage)
-  const convertToPercentage = (data: ResultDataType): ResultDataType => {
-    const total = Object.values(data).reduce((sum, v) => sum + v, 0);
-
-    const percentageData: ResultDataType = {};
-    for (const [key, value] of Object.entries(data)) {
-      percentageData[key] = parseFloat(((value / total) * 100).toFixed(1));
-    }
-
-    return percentageData;
-  };
 
   // ✅ 차트 옵션 설정
   const chartOptions = {
@@ -77,8 +48,8 @@ export default function Chart() {
             weight: 'bold' as const,
           };
         },
-        formatter: (value: number, context: any) => {
-          const label = context.chart.data.labels[context.dataIndex];
+        formatter: (value: number, context: Context) => {
+          const label = context.chart.data.labels?.[context.dataIndex];
           return `${label}\n${value}%`;
         },
       },
@@ -105,6 +76,8 @@ export default function Chart() {
     ],
   });
 
+  // getResultData, convertToPercentage 외부 함수 사용
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     try {
       const resultData = getResultData();
