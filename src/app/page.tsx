@@ -8,11 +8,10 @@ export default function HomePage() {
 
   const handleStart = () => {
     const input = document.getElementById('nickname-input') as HTMLInputElement;
-    const nickname = input?.value.trim();
+    let nickname = input?.value.trim();
 
     if (!nickname) {
-      input.value = generateNickname();
-      return;
+      nickname = generateNickname();
     }
 
     localStorage.setItem('nickname', nickname);
@@ -21,8 +20,8 @@ export default function HomePage() {
 
   return (
     <div className="container flex h-dvh flex-col items-center">
-      <main className="text-foreground flex h-[calc(100%-11rem)] w-full max-w-md flex-col justify-between space-y-10 py-6 text-center">
-        <div className="mt-10 text-3xl leading-[4rem] font-bold">
+      <main className="text-foreground flex h-[calc(100%-11rem)] w-full max-w-md flex-col justify-between space-y-10 text-center">
+        <div className="my-11 text-3xl leading-16 font-bold">
           <p>
             <span className="text-primary">개발자 </span>
             유형테스트
@@ -36,6 +35,9 @@ export default function HomePage() {
             placeholder="닉네임을 입력해 주세요."
             className="focus:ring-primary w-full border-b border-gray-400 bg-transparent px-4 py-2 text-center placeholder-gray-400 focus:ring-2 focus:outline-none"
           />
+          <p className="text-sm">
+            Tip) 닉네임 없이 시작하면 랜덤 닉네임이 생성돼요.
+          </p>
           <button
             onClick={handleStart}
             className="rounded-full bg-white px-8 py-3 font-semibold text-black transition hover:bg-gray-200"
