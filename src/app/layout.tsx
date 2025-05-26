@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
-
 
 export const metadata: Metadata = {
   title: '개발자 유형테스트',
@@ -14,10 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body
-        className='antialiased bg-slate-800'
-      >
+      <body className="bg-slate-800 antialiased">
         {children}
+        <Analytics />
       </body>
     </html>
   );
