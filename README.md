@@ -94,7 +94,7 @@
 닉네임 입력 후 테스트를 시작할 수 있습니다.<br/>
 닉네임을 입력하지 않으면 자동으로 랜덤 닉네임이 생성되어 사용됩니다.
 
-(이미지)
+<img width="293" alt="start" src="https://github.com/user-attachments/assets/4767d99d-a84b-475d-8a12-c23faf3ffcc7" />
 
 ### 설문 화면
 
@@ -104,7 +104,8 @@
 왼쪽 화살표를 눌러 이전 문항으로 돌아가 응답을 수정할 수 있습니다.<br/>
 이 경우, 자동 이동은 되지 않으며 오른쪽 화살표를 눌러 현재까지 답변한 마지막 문항으로 이동할 수 있습니다.
 
-(이미지)
+https://github.com/user-attachments/assets/3b7db550-3857-4f0e-b9db-a61a1996ebf8
+
 
 ### 결과 화면
 
