@@ -1,7 +1,7 @@
 import html2canvas from 'html2canvas';
 
 // ✅ 컨텐츠 캡쳐 후 이미지로 저장
-const useCapture = async (element: HTMLElement | null) => {
+const captureElement = async (element: HTMLElement | null) => {
   try {
     if (!element) return;
 
@@ -21,4 +21,4 @@ const useCapture = async (element: HTMLElement | null) => {
   }
 };
 
-export default useCapture;
+export default captureElement;

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import useCapture from '../hooks/useCapture';
+import captureElement from '../hooks/captureElement';
 import { useRouter } from 'next/navigation';
 
 // 버튼 컴포넌트
@@ -54,7 +54,7 @@ export default function CaptureContents() {
 
   /** ✅ 이미지 저장 */
   const captureContents = () => {
-    useCapture(captureRef.current);
+    captureElement(captureRef.current);
   };
 
   /** ✅ 다시하기 클릭시 홈으로 */
