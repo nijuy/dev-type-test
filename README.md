@@ -14,9 +14,78 @@
 > 본 서비스는 [2025 오픈소스 컨트리뷰션 아카데미](https://www.contribution.ac/) 체험형 활동의 일환으로,<br/>
 > <Git 활용 및 Next.js 뽀개기> 프로젝트의 멘티가 모여 개발하였습니다.
 
-|              [김하영<br/>(@hy-glory)](https://github.com/hy-glory)              |                [변채원<br/>(@bye-on)](https://github.com/bye-on)                |                [이유진<br/>(@nijuy)](https://github.com/nijuy)                 |           [이정명<br/>(@usedupnote)](https://github.com/usedupnote)            |             [황남준<br/>(@namjun12)](https://github.com/namjun12)              |
-| :-----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: | :----------------------------------------------------------------------------: | :----------------------------------------------------------------------------: | :----------------------------------------------------------------------------: |
-| <img src="https://avatars.githubusercontent.com/u/197868891?v=4" width="120" /> | <img src="https://avatars.githubusercontent.com/u/123866834?v=4" width="120" /> | <img src="https://avatars.githubusercontent.com/u/87255462?v=4" width="120" /> | <img src="https://avatars.githubusercontent.com/u/59154924?v=4" width="120" /> | <img src="https://avatars.githubusercontent.com/u/87626510?v=4" width="120" /> |
+<table>
+  <tr>
+     <td align="center">
+      <a href="https://github.com/hy-glory">
+        <img src="https://github.com/hy-glory.png" width="400" alt="김하영" />
+      </a>
+    </td>
+     <td align="center">
+      <a href="https://github.com/bye-on">
+        <img src="https://github.com/bye-on.png" width="400" alt="변채원" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/nijuy">
+        <img src="https://github.com/nijuy.png" width="400" alt="이유진" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/usedupnote">
+        <img src="https://github.com/usedupnote.png" width="400" alt="이정명" />
+      </a>
+    </td>
+   <td align="center">
+      <a href="https://github.com/namjun12">
+        <img src="https://github.com/namjun12.png" width="400" alt="황남준" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/hy-glory">
+        <b>김하영</b>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/bye-on">
+        <b>변채원</b>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/nijuy">
+        <b>이유진</b>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/usedupnote">
+        <b>이정명</b>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/namjun12">
+        <b>황남준</b>
+      </a>
+    </td>
+  </tr>
+    <td align="center">
+      <span>Frontend<br>결과페이지</span>
+    </td>
+    <td align="center">
+      <span>Frontend<br>시작페이지</span>
+    </td>
+    <td align="center">
+      <span>Frontend<br>질문페이지</span>
+    </td>
+    <td align="center">
+      <span>Frontend<br>질문페이지</span>
+    </td>
+    <td align="center">
+      <span>Frontend<br>결과페이지</span>
+    </td>
+  </tr>
+</table>
 
 ## ✨ 기능 소개
 
