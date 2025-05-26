@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import DetailInfo from './components/DetailInfo';
 import Btn from './components/Btn';
 import Chart from './components/Chart';
-import { log } from 'console';
 
 export default function ResultPage() {
   // ✅ 유저 데이터 타입 정의
@@ -71,7 +70,7 @@ export default function ResultPage() {
         </div>
       </div>
 
-      <div className="flex-center gap-5 md:gap-7">
+      <div className="flex-center h-[21.875rem] gap-5 md:h-[28rem] md:gap-7">
         <Chart />
       </div>
 
