@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import DetailInfo from './components/DetailInfo';
 import Btn from './components/Btn';
+import Chart from './components/Chart';
 import { log } from 'console';
 
 export default function ResultPage() {
@@ -70,8 +71,8 @@ export default function ResultPage() {
         </div>
       </div>
 
-      <div className="flex-center h-37 rounded-xl border border-white text-white md:h-67">
-        차트 들어갈 예정(chart.js)
+      <div className="flex-center gap-5 md:gap-7">
+        <Chart />
       </div>
 
       <div className="flex flex-col gap-5 text-white xl:gap-7">
