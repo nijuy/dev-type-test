@@ -32,6 +32,7 @@ const adjectives = [
 ];
 
 const nouns = [
+  '고라니',
   '호랑이',
   '토끼',
   '여우',
