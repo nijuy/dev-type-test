@@ -70,7 +70,7 @@ export default function ResultPage() {
         </div>
       </div>
 
-      <div className="flex-center h-[21.875rem] gap-5 md:h-[28rem] md:gap-7">
+      <div className="flex-center h-[18rem] gap-5 md:h-[28rem] md:gap-7">
         <Chart />
       </div>
 
