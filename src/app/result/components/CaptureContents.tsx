@@ -64,7 +64,7 @@ export default function CaptureContents() {
 
   /** ✅ 링크 복사 클릭시 링크 복사 */
   const copyLink = () => {
-    navigator.clipboard.writeText('https://google.com');
+    navigator.clipboard.writeText('https://dev-type-test.vercel.app/');
     alert('링크가 복사되었습니다!');
   };
 
