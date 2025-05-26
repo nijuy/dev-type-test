@@ -1,6 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import { generateNickname } from './utils/randomNickname';
 
 export default function HomePage() {
   const router = useRouter();
@@ -10,7 +11,7 @@ export default function HomePage() {
     const nickname = input?.value.trim();
 
     if (!nickname) {
-      alert('닉네임을 입력해 주세요.');
+      input.value = generateNickname();
       return;
     }
 
