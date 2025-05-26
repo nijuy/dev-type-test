@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import captureElement from '../hooks/captureElement';
+import captureElement from '../utils/captureElement';
 import { useRouter } from 'next/navigation';
 
 // 버튼 컴포넌트
