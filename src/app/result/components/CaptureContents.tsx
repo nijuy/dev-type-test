@@ -33,7 +33,7 @@ export default function CaptureContents() {
   // ✅ 유저 데이터
   const userData: UserDataType = {
     name: nickname,
-    typeResult: '야생형',
+    typeResult: userType,
   };
   // ✅ 결과 데이터
   const resultData: Record<string, ResultDataType> = {
