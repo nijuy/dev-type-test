@@ -6,49 +6,49 @@ export function calculateResult(
   questions: QuestionType[],
   answers: Answers,
 ): Record<string, number> {
-  const resultTypes: Record<string, number[]> = {
-    야생형: [],
-    교과서형: [],
-    지피티형: [],
-    문제집형: [],
-    메뚜기형: [],
+  interface TypeScore {
+    sum: number;
+    count: number;
   };
+
+  const resultTypes: Record<string, TypeScore> = {
+    야생형: { sum: 0, count: 0 },
+    교과서형: { sum: 0, count: 0 },
+    지피티형: { sum: 0, count: 0 },
+    문제집형: { sum: 0, count: 0 },
+    메뚜기형: { sum: 0, count: 0 },
+  };
+
 
   for (const q of questions) {
     const answerValue = answers[q.id];
 
-    if (answerValue == null) continue;
+    if (answerValue === undefined) continue;
 
-    q.weight.forEach((type) => {
+    q.weights.forEach((type) => {
       if (resultTypes[type]) {
-        resultTypes[type].push(answerValue);
+        resultTypes[type].sum += answerValue;
+        resultTypes[type].count += 1;
       } else {
         console.warn(`weight - 없는 타입입니다! : ${type}`);
       }
     });
 
-    if (q.inverseWeight) {
-      q.inverseWeight.forEach((type) => {
-        if (resultTypes[type]) {
-          resultTypes[type].push(6 - answerValue);
-        } else {
-          console.warn(`inverseWeight - 없는 타입입니다! : ${type}`);
-        }
-      });
-    }
+    q.inverseWeights.forEach((type) => {
+      let inverseValue = 6 - answerValue;
+      if (resultTypes[type]) {
+        resultTypes[type].sum += inverseValue;
+        resultTypes[type].count += 1;
+      } else {
+        console.warn(`inverseWeight - 없는 타입입니다! : ${type}`);
+      }
+    });
   }
 
   const result: Record<string, number> = {};
 
-  Object.keys(resultTypes).forEach((type) => {
-    const scores = resultTypes[type];
-    const average =
-      scores.length > 0
-        ? scores.reduce((sum, score) => sum + score, 0) / scores.length
-        : 0;
-
-    // TODO: 소수점 둘째자리까지 반올림 or 소수점 첫째자리까지 반올림
-    result[type] = Math.round(average * 100) / 100;
+  Object.entries(resultTypes).forEach(([type, { sum, count }]) => {
+    result[type] = count > 0 ? Math.round((sum / count) * 100) / 100 : 0;
   });
 
   return result;
