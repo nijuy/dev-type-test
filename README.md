@@ -102,14 +102,14 @@
 왼쪽 화살표를 눌러 이전 문항으로 돌아가 응답을 수정할 수 있습니다.<br/>
 이 경우, 자동 이동은 되지 않으며 오른쪽 화살표를 눌러 현재까지 답변한 마지막 문항으로 이동할 수 있습니다.
 
-https://github.com/user-attachments/assets/3b7db550-3857-4f0e-b9db-a61a1996ebf8
+https://github.com/user-attachments/assets/37c22500-99e1-451e-a42c-7f8445a20498
 
 ### 결과 화면
 
 참여자의 메인 유형과 각 유형별 비율을 보여주는 페이지입니다.<br/>
 메인 유형에 대한 간단한 설명과 추천 학습법도 함께 제공됩니다.
 
-아래 기능을 통해 테스트 링크를 공유하거나 저장할 수 있습니다:
+아래 기능을 통해 테스트 링크를 공유하거나 테스트 결과를 이미지로 저장할 수 있습니다:
 
 - `다시하기`: 테스트를 처음부터 다시 진행합니다.
 
@@ -117,4 +117,4 @@ https://github.com/user-attachments/assets/3b7db550-3857-4f0e-b9db-a61a1996ebf8
 
 - `이미지 저장`: 결과 화면을 이미지로 저장합니다.
 
-(이미지)
+https://github.com/user-attachments/assets/6d69d092-68de-4e7e-88fd-8cfda5614855
