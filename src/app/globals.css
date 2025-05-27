@@ -3,6 +3,16 @@
 :root {
   --background: #1f2937;
   --foreground: #f3f3f7;
+
+  /* html2canvas 호환성을 위해 추가 */
+  --color-slate-800: #1d293d;
+  --color-gray-200: #e5e7eb;
+  --color-gray-400: #99a1af;
+}
+
+/* html2canvas 호환성을 위해 추가 */
+img {
+  display: inline-block;
 }
 
 @theme inline {
