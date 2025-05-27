@@ -1,5 +1,5 @@
 <div align="center">
-   <img src="url" />
+   <img width="1200" alt="banner" src="https://github.com/user-attachments/assets/2e4a7a9d-cc26-48dc-9cba-4eec0d69c191" />
    <h1>나는 어떤 개발자일까?</h1>
    <p>지금 바로 테스트를 통해 당신의 유형을 확인해보세요 🔍</p>
 </div>
@@ -105,7 +105,6 @@
 이 경우, 자동 이동은 되지 않으며 오른쪽 화살표를 눌러 현재까지 답변한 마지막 문항으로 이동할 수 있습니다.
 
 https://github.com/user-attachments/assets/3b7db550-3857-4f0e-b9db-a61a1996ebf8
-
 
 ### 결과 화면
 
