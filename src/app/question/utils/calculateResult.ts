@@ -1,6 +1,6 @@
 import { QuestionType } from '../types/QuestionContentData';
 
-export type Answers = Record<number, number>;
+type Answers = Record<number, number>;
 
 export function calculateResult(
   questions: QuestionType[],
