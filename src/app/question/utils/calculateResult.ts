@@ -35,7 +35,7 @@ export function calculateResult(
     });
 
     q.inverseWeights.forEach((type) => {
-      let inverseValue = 6 - answerValue;
+      const inverseValue = 6 - answerValue;
       if (resultTypes[type]) {
         resultTypes[type].sum += inverseValue;
         resultTypes[type].count += 1;
