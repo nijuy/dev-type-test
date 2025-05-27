@@ -1,5 +1,5 @@
 <div align="center">
-   <img width="1200" alt="banner" src="https://github.com/user-attachments/assets/2e4a7a9d-cc26-48dc-9cba-4eec0d69c191" />
+    <img width="1200" alt="banner" src="https://github.com/user-attachments/assets/d5ad5bfe-bf71-493a-ad4a-62566c0657db" />
 </div>
 
 ## 🎯 서비스 소개
