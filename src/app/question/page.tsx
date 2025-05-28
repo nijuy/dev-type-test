@@ -5,7 +5,7 @@ import QUESTIONS from '@/app/question/data/questions.json';
 import QuestionContent from './components/QuestionContent';
 import RadioGroup from './components/RadioGroup';
 import ProgressBar from './components/ProgressBar';
-import { calculateResult } from "./utils/calculateResult";
+import { calculateResult } from './utils/calculateResult';
 
 export default function QuestionPage() {
   const { currentIndex, answers, prev, next, select } = useQuestionProgress();

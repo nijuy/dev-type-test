@@ -1,16 +1,15 @@
-import { QuestionType } from '../types/QuestionContentData';
+import { QuestionType } from '../types/questionContent';
 
 type Answers = Record<number, number>;
 interface TypeScore {
   sum: number;
   count: number;
-};
+}
 
 export function calculateResult(
   questions: QuestionType[],
   answers: Answers,
 ): Record<string, number> {
-
   const resultTypes: Record<string, TypeScore> = {
     야생형: { sum: 0, count: 0 },
     교과서형: { sum: 0, count: 0 },
@@ -18,7 +17,6 @@ export function calculateResult(
     문제집형: { sum: 0, count: 0 },
     메뚜기형: { sum: 0, count: 0 },
   };
-
 
   for (const q of questions) {
     const answerValue = answers[q.id];
