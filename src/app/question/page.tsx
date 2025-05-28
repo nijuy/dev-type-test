@@ -5,6 +5,7 @@ import QUESTIONS from '@/app/question/data/questions.json';
 import QuestionContent from './components/QuestionContent';
 import RadioGroup from './components/RadioGroup';
 import ProgressBar from './components/ProgressBar';
+import { calculateResult } from "./utils/calculateResult";
 
 export default function QuestionPage() {
   const { currentIndex, answers, prev, next, select } = useQuestionProgress();
@@ -18,6 +19,8 @@ export default function QuestionPage() {
 
     const isLastQuestion = currentIndex === QUESTIONS.length - 1;
     if (isLastQuestion) {
+      const testResult = calculateResult(QUESTIONS, answers);
+      localStorage.setItem('typeResult', JSON.stringify(testResult));
       router.push('/result');
     } else if (isFirstAnswer) {
       setTimeout(next, 300);
