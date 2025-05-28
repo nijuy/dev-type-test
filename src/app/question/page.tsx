@@ -29,8 +29,8 @@ export default function QuestionPage() {
 
   return (
     <div className="container flex min-h-dvh flex-col items-center justify-between md:justify-start">
-      <main className="mb-10 w-full md:mb-20">
-        <div className="grid w-full gap-y-10">
+      <main className="mb-10 w-full md:mb-10">
+        <div className="grid w-full gap-y-8">
           <QuestionContent text={question.question} id={question.id} />
           <RadioGroup onChange={handleChange} active={answers[question.id]} />
         </div>
