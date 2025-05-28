@@ -1,6 +1,6 @@
 export interface QuestionType {
   id: number;
-  text: string;
-  weight: string[];
-  inverseWeight: string[];
+  question: string;
+  weights: string[];
+  inverseWeights: string[];
 }
