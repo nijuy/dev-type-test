@@ -1,15 +1,15 @@
 import { QuestionType } from '../types/QuestionContentData';
 
 type Answers = Record<number, number>;
+interface TypeScore {
+  sum: number;
+  count: number;
+};
 
 export function calculateResult(
   questions: QuestionType[],
   answers: Answers,
 ): Record<string, number> {
-  interface TypeScore {
-    sum: number;
-    count: number;
-  };
 
   const resultTypes: Record<string, TypeScore> = {
     야생형: { sum: 0, count: 0 },
