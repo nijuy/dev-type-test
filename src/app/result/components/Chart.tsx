@@ -11,19 +11,6 @@ ChartJS.register(ArcElement);
 ChartJS.register(ChartDataLabels);
 
 export default function Chart() {
-  // 테스트용 데이터 로컬 스토리지에 저장 -> 평균점수로 변경
-  useEffect(() => {
-    const testResult = {
-      야생형: 3.7,
-      교과서형: 3.0,
-      지피티형: 2.5,
-      문제집형: 1.8,
-      메뚜기형: 3.2,
-    };
-
-    localStorage.setItem('typeResult', JSON.stringify(testResult));
-  }, []);
-
   // ✅ 차트 데이터 타입 정의
   interface ChartDataType {
     labels: string[];
